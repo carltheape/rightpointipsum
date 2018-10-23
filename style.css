@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'RP';
+  src: url('./assets/fonts/D-DIN-Bold.eot');
+  src: url('./assets/fonts/D-DIN-Bold.woff2') format('woff2'),
+       url('./assets/fonts/D-DIN-Bold.woff') format('woff'),
+       url('./assets/fonts/D-DIN-Bold.ttf') format('truetype'),
+       url('./assets/fonts/D-DIN-Bold.svg#D-DIN-Bold') format('svg'),
+       url('./assets/fonts/D-DIN-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+	font-family: RP, Impact, Charcoal, sans-serif;
+	
+}
+
+body{
+	min-height: 88vh;
+	padding: 0 25px;
+}
+
+.background{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: 0.1;
+	background-image: url("assets/images/RP_illustration_pattern-02.png");
+	background-size: contain;
+}
+
+.top{
+	text-align: center;
+	font-size: 40px;
+    letter-spacing: 5px;
+    width: fit-content;
+    margin: 52px auto;
+}
+
+h1::first-letter {
+	border-bottom: solid 10px red;
+    letter-spacing: 0;
+    margin-right: 5px;
+}
+
+.help{
+	display: block;
+	position: fixed;
+	margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 300px;
+}
+
+.buttons{
+	text-align: center;
+	max-width: 690px;
+    margin: 0 auto 40px auto;
+    position: fixed;
+    top: 170px;
+}
+
+button{
+	padding: 5px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 30px 30px;
+    display: block;
+	
+}
+
+#ipsum{
+	color: white;
+    background-color: red;
+    border-color: red;
+}
+
+#copy{
+	color: white;
+    background-color: black;
+    border-color: black;
+}
+
+#clear{
+	color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.hide{
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.2s ease-in-out;
+}
+
+p{
+	margin: 0 auto 25px auto;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 690px;
+}
+
+.about{
+    width: 45px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.tooltip{
+	visibility: hidden;
+	opacity: 0;
+    width: max-content;
+    right: -15px;
+    top: -23px;
+    position: absolute;
+    line-height: 2;
+    font-size: 10px;
+    
+}
+
+.about:hover .tooltip{
+	transition: all 0.2s ease-in-out;
+	visibility: visible;
+	opacity: 1;
+}
+
+@media only screen and (max-width: 980px) {
+    .buttons {
+        text-align: center;
+	    max-width: 980px;
+	    margin: 0 auto 40px auto;
+	    position: absolute;
+	    top: 0;
+	    left: 50%;
+	    transform: translateX(-50%);
+    }
+    
+    button{
+    	display: inline-block;
+    	margin: 15px 10px;
+    }
+}
