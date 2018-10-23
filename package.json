@@ -1,0 +1,14 @@
+{
+  "name": "rp-ipsum",
+  "version": "1.0.0",
+  "description": "lorem ipsum generator for RightPoint",
+  "main": "script.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Tyler Finkle",
+  "license": "ISC",
+  "dependencies": {
+    "requirejs": "^2.3.6"
+  }
+}
