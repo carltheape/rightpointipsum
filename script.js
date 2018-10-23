@@ -239,7 +239,7 @@ function buildSentence(n) {
 		else{
 			sentence += ".  ";
 		}
-		console.log(n);
+		// console.log(n);
 	}
 	return sentence;
 };
@@ -255,9 +255,9 @@ function buildParagraph(q){
 function lorem(){
 	var node = document.createElement("P");
 	var textnode = buildParagraph(10);
-	console.log(node, textnode);
+	// console.log(node, textnode);
 	node.innerHTML = textnode;
-	console.log(node);
+	// console.log(node);
 	var loremContent = document.getElementById("loremContent");
 	loremContent.appendChild(node);
 
