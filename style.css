@@ -147,4 +147,9 @@ p{
     h1{
         font-size: 100%;
     }
+    
+    .help{
+        font-size: 32vw;
+        z-index: 2;
+    }
 }
