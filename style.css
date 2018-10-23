@@ -53,6 +53,7 @@ h1::first-letter {
     left: 50%;
     transform: translateX(-50%);
     font-size: 300px;
+    z-index: 2;
 }
 
 .buttons{
@@ -150,6 +151,5 @@ p{
     
     .help{
         font-size: 32vw;
-        z-index: 2;
     }
 }
