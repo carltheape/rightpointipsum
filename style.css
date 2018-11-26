@@ -153,3 +153,26 @@ p{
         font-size: 32vw;
     }
 }
+
+.page-wrap {
+  min-height: 92vh;
+  /* equal to footer height */
+  margin-bottom: -70px; 
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+footer, .page-wrap:after {
+  height: 70px; 
+}
+
+.disclaimer{
+    font-size: 10px;
+    margin: 0 auto 25px auto;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 690px;
+}
+}
